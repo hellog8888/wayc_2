@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+#define MUL_VAR_NAME(X1, X2) mul_##X1##_##X2
+
+int main(void)
+{
+    int v_1, v_2;
+    scanf("%d %d", &v_1, &v_2);
+    
+    int MUL_VAR_NAME(v_1, v_2) = v_1 * v_2;
+    
+    printf("%d", MUL_VAR_NAME(v_1, v_2) = v_1 * v_2);
+
+    return 0;
+}
